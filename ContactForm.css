@@ -1,0 +1,125 @@
+body {
+    font-family: 'Georgia', serif;
+    background: url('Website Assets/fresh-vegetables-isolated-on-white-background-for-healthy-cooking-free-photo.jpeg') no-repeat center center fixed; 
+    height: 100vh;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 60px 10px;
+    position: relative;
+  }
+
+  .logo {
+    position: absolute;
+    left: 60px;
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  nav {
+    display: flex;
+    gap: 60px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 22px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px;
+    gap: 60px;
+  }
+
+  .text-side {
+    max-width: 300px;
+  }
+
+  .text-side h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .text-side p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .form-container {
+    border: 1px solid #aaa;
+    border-radius: 15px;
+    padding: 30px;
+    width: 500px;
+  }
+
+  .form-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 12px 16px;
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    resize: none;
+  }
+
+  textarea {
+    height: 120px;
+  }
+
+  .form-single {
+    margin-bottom: 20px;
+  }
+
+ .nav-item {
+      font-size: 22px;
+      color: #000000;
+      text-decoration: none;
+      position: relative;
+      padding-bottom: 5px;
+    }
+
+
+
+    .nav-item button {
+      padding: 10px 25px;
+      font-size: 18px;
+      border-radius: 10px;
+      border: 1px solid #000;
+      background-color: rgb(255, 255, 255);
+      cursor: pointer;
+      font-family: 'Georgia', serif;
+      text-align: center;
+    }
+
+
+    
+
+  @media (max-width: 800px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .form-container {
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .text-side {
+      text-align: center;
+    }
+  }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Featured Recipes</title>
+  <link rel="stylesheet" href="FeaturedRecipes.css">
+
+
+</head>
+<body>
+  <header class="header">
+
+    <div class="logo">PL</div>
+
+    <nav class="nav-menu">
+      <a href="#" class="nav-item active">Featured Recipes</a>
+      <a href="ExploreRecipes.html" class="nav-item">Explore Recipes</a>
+      <a href="Cuisines.html" class="nav-item">Cuisines</a>
+    </nav>
+
+
+
+
+    <div></div>
+  </header>
+</body>
+
+
+
+
+
+</head>
+<body>
+  
+<button><a href="Log in.html" class="buttonstyle">Log Out</a></button>  
+
+
+<button><a href="FavoriteRecipes.html" class="buttonstyle">Favorites</a></button>  
+
+
+<button><a href="ContactForm.html" class="buttonstyle">Contact Us</a></button>  
+
+
+
+
+  <div class="carousel-container">
+    <div class="carousel" id="carousel">
+      <img src="Website Assets/30.jpg">
+      <img src="Website Assets/44.avif">
+      <img src="Website Assets/28.jpg">
+    </div>
+  </div>
+
+
+
+
+
+
+  <script>
+    const carousel = document.getElementById('carousel');
+    const images = carousel.querySelectorAll('img');
+    let index = 0;
+
+    function showNextSlide() {
+      index = (index + 1) % images.length;
+      carousel.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    setInterval(showNextSlide, 3000);  
+  </script>
+
+
+
+</body>
+</html>
